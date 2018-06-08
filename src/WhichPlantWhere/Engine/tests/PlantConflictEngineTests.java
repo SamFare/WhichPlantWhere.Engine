@@ -1,10 +1,9 @@
 package WhichPlantWhere.Engine.tests;
 
+import WhichPlantWhere.Engine.Conflict;
 import WhichPlantWhere.Engine.PlantConflictEngine;
 import org.json.JSONObject;
 import org.junit.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,21 +16,30 @@ public class PlantConflictEngineTests {
 
     @Test
     public void whenThePlantConflictFinderIsPassedAnEmptyArrayListItReturnsAnEmptyList()  {
-        PlantConflictEngine plantConflictFinder = new PlantConflictEngine(new JSONObject("{\"conflicts\": [{\"veg\": \"carrot\", \"conflictsWith\" :  [\"beetroot\"]}]}"));
+        ArrayList<Conflict> conflicts = new ArrayList();
+        conflicts.add(new Conflict("carrot", new ArrayList<>(Arrays.asList("beetroot"))));
+
+        PlantConflictEngine plantConflictFinder = new PlantConflictEngine(conflicts);
         Map found  = plantConflictFinder.check(new ArrayList<>());
         assertTrue(found.isEmpty());
     }
 
     @Test
     public void whenThereIsNoConflictAnEmptyArrayIsReturned() {
-        PlantConflictEngine plantConflictFinder = new PlantConflictEngine(new JSONObject("{\"conflicts\": [{\"veg\": \"carrot\", \"conflictsWith\" :  [\"beetroot\"]}]}"));
+        ArrayList<Conflict> conflicts = new ArrayList();
+        conflicts.add(new Conflict("carrot", new ArrayList<>(Arrays.asList("beetroot"))));
+
+        PlantConflictEngine plantConflictFinder = new PlantConflictEngine(conflicts);
         Map found = plantConflictFinder.check(new ArrayList<>(Arrays.asList("carrot", "aubergine")));
         assertTrue(found.isEmpty());
     }
 
    @Test
     public void whenThereIsAConflictIsSpottedItReturnsTheConflict() {
-        PlantConflictEngine plantConflictFinder = new PlantConflictEngine(new JSONObject("{\"conflicts\": [{\"veg\": \"carrot\", \"conflictsWith\" :  [\"beetroot\"]}]}"));
+       ArrayList<Conflict> conflicts = new ArrayList();
+       conflicts.add(new Conflict("carrot", new ArrayList<>(Arrays.asList("beetroot"))));
+
+        PlantConflictEngine plantConflictFinder = new PlantConflictEngine(conflicts);
         Map found = plantConflictFinder.check(new ArrayList<>(Arrays.asList("carrot", "beetroot")));
         assertTrue(found.get("carrot").equals("beetroot"));
     }

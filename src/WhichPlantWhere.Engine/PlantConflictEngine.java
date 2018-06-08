@@ -9,31 +9,26 @@ import java.util.Map;
 
 public class PlantConflictEngine {
 
-    JSONArray conflicts;
+    ArrayList<Conflict> conflicts;
 
-    public PlantConflictEngine(JSONObject conflictsJson) {
-       this.conflicts =  (JSONArray) conflictsJson.get("conflicts");
+    public PlantConflictEngine(ArrayList<Conflict> conflicts) {
+       this.conflicts =  conflicts;
     }
 
     public Map check(ArrayList plants) {
-        if (plants.size() > 1) {
+       if (plants.size() > 1) {
             HashMap toReturn = new HashMap<String, String>();
 
-            JSONObject firstConflictList = this.conflicts.getJSONObject(0);
-            JSONArray thingsThatFirstConflictConflictsWith = firstConflictList.getJSONArray("conflictsWith");
+            Conflict firstConflictList = this.conflicts.get(0) ;
 
-            for(int i = 0; i < thingsThatFirstConflictConflictsWith.length(); ++i ) {
-                if (plants.contains(thingsThatFirstConflictConflictsWith.get(i))) {
-                    toReturn.put(firstConflictList.getString("veg"), thingsThatFirstConflictConflictsWith.get(i));
+
+            for(String conflict : firstConflictList.values) {
+                if (plants.contains(conflict)) {
+                    toReturn.put(firstConflictList.key, conflict);
                 }
             }
            return toReturn;
         }
         return new HashMap();
-    }
-
-    public String getNameOfPlantAt(int index) {
-        JSONObject firstConflict = (JSONObject) this.conflicts.get(0);
-        return (String) firstConflict.keys().next();
     }
 }

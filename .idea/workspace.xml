@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f681730-1dd0-42cb-a998-f6f54f41ec82" name="Default" comment="" />
+    <list default="true" id="5f681730-1dd0-42cb-a998-f6f54f41ec82" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/WhichPlantWhere.Engine/PlantConflictEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhichPlantWhere.Engine/PlantConflictEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WhichPlantWhere/Engine/tests/PlantConflictEngineTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WhichPlantWhere/Engine/tests/PlantConflictEngineTests.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,12 +14,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="PlantConflictEngine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WhichPlantWhere.Engine/PlantConflictEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="375">
+              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+              <folding>
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -24,8 +31,8 @@
       <file leaf-file-name="PlantConflictEngineTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WhichPlantWhere/Engine/tests/PlantConflictEngineTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="35" selection-start-line="35" selection-end-line="36" />
+            <state relative-caret-position="423">
+              <caret line="41" column="83" selection-start-line="41" selection-start-column="83" selection-end-line="41" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,7 +40,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Conflict.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WhichPlantWhere/Engine/Conflict.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="22" />
+              <folding>
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,14 +73,16 @@
         <option value="$PROJECT_DIR$/src/test/PlantConflictFinderTests.java" />
         <option value="$PROJECT_DIR$/src/WhichPlantWhere.Engine/WhichPlantWhere.Engine.java" />
         <option value="$PROJECT_DIR$/src/WhichPlantWhere/Engine/tests/PlantConflictFinderTests.java" />
-        <option value="$PROJECT_DIR$/src/WhichPlantWhere/Engine/tests/PlantConflictEngineTests.java" />
+        <option value="$PROJECT_DIR$/src/WhichPlantWhere/Engine/tests/Conflict.java" />
+        <option value="$PROJECT_DIR$/src/WhichPlantWhere/Engine/Conflict.java" />
         <option value="$PROJECT_DIR$/src/WhichPlantWhere.Engine/PlantConflictEngine.java" />
+        <option value="$PROJECT_DIR$/src/WhichPlantWhere/Engine/tests/PlantConflictEngineTests.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="135" />
-    <option name="y" value="57" />
+    <option name="x" value="77" />
+    <option name="y" value="23" />
     <option name="width" value="1603" />
     <option name="height" value="954" />
   </component>
@@ -89,17 +120,6 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="WhichPlantWhere.Engine" type="cbb8eebc:String" user="WhichPlantWhere.Engine" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -122,6 +142,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="WhichPlantWhere.Engine" type="cbb8eebc:String" user="WhichPlantWhere.Engine" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,6 +163,11 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="WhichPlantWhere.Engine" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -153,7 +189,7 @@
       <module name="WhichPlantWhere.Engine" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="WhichPlantWhere.Engine.tests.*" />
+          <option name="PATTERN" value="WhichPlantWhere.Engine.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,7 +208,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="PlantConflictEngineTests.whenThereIsAConflictIsSpottedItReturnsTheConflict (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlantConflictEngineTests.whenThePlantConflictFinderIsPassedAnEmptyArrayListItReturnsAnEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WhichPlantWhere.Engine" />
       <extension name="coverage">
         <pattern>
@@ -184,7 +220,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="WhichPlantWhere.Engine.tests" />
       <option name="MAIN_CLASS_NAME" value="WhichPlantWhere.Engine.tests.PlantConflictEngineTests" />
-      <option name="METHOD_NAME" value="whenThereIsAConflictIsSpottedItReturnsTheConflict" />
+      <option name="METHOD_NAME" value="whenThePlantConflictFinderIsPassedAnEmptyArrayListItReturnsAnEmptyList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -199,7 +235,7 @@
       <module name="WhichPlantWhere.Engine" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="WhichPlantWhere.Engine.tests.*" />
+          <option name="PATTERN" value="WhichPlantWhere.Engine.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -218,11 +254,34 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="PlantConflictEngineTests.whenThereIsAConflictIsSpottedItReturnsTheConflict" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WhichPlantWhere.Engine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WhichPlantWhere.Engine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="WhichPlantWhere.Engine.tests" />
+      <option name="MAIN_CLASS_NAME" value="WhichPlantWhere.Engine.tests.PlantConflictEngineTests" />
+      <option name="METHOD_NAME" value="whenThereIsAConflictIsSpottedItReturnsTheConflict" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="PlantConflictEngineTests.whenThereIsNoConflictAnEmptyArrayIsReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WhichPlantWhere.Engine" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="WhichPlantWhere.Engine.tests.*" />
+          <option name="PATTERN" value="WhichPlantWhere.Engine.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -284,13 +343,15 @@
       <item itemvalue="JUnit.PlantConflictEngineTests.whenThereIsNoConflictAnEmptyArrayIsReturned" />
       <item itemvalue="JUnit.PlantConflictEngineTests.whenThereIsAConflictIsSpottedItReturnsTheConflict" />
       <item itemvalue="JUnit.PlantConflictEngineTests.whenThereIsAConflictIsSpottedItReturnsTheConflict (1)" />
+      <item itemvalue="JUnit.PlantConflictEngineTests.whenThePlantConflictFinderIsPassedAnEmptyArrayListItReturnsAnEmptyList" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PlantConflictEngineTests" />
         <item itemvalue="JUnit.PlantConflictEngineTests.whenThereIsAConflictIsSpottedItReturnsTheConflict (1)" />
-        <item itemvalue="JUnit.PlantConflictEngineTests.whenThereIsAConflictIsSpottedItReturnsTheConflict" />
         <item itemvalue="JUnit.PlantConflictEngineTests.whenThereIsNoConflictAnEmptyArrayIsReturned" />
+        <item itemvalue="JUnit.PlantConflictEngineTests.whenThePlantConflictFinderIsPassedAnEmptyArrayListItReturnsAnEmptyList" />
+        <item itemvalue="JUnit.PlantConflictEngineTests.whenThereIsAConflictIsSpottedItReturnsTheConflict" />
       </list>
     </recent_temporary>
   </component>
@@ -308,15 +369,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PlantConflictEngineTests_whenThereIsAConflictIsSpottedItReturnsTheConflict - 2018.06.08 at 16h 28m 06s.xml">
-      <configuration name="PlantConflictEngineTests.whenThereIsAConflictIsSpottedItReturnsTheConflict" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlantConflictEngineTests - 2018.06.08 at 16h 28m 09s.xml">
-      <configuration name="PlantConflictEngineTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlantConflictEngineTests - 2018.06.08 at 16h 28m 41s.xml">
-      <configuration name="PlantConflictEngineTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PlantConflictEngineTests - 2018.06.08 at 16h 30m 33s.xml">
       <configuration name="PlantConflictEngineTests" configurationId="JUnit" />
     </history-entry>
@@ -338,14 +390,23 @@
     <history-entry file="PlantConflictEngineTests - 2018.06.08 at 16h 41m 06s.xml">
       <configuration name="PlantConflictEngineTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PlantConflictEngineTests_whenThePlantConflictFinderIsPassedAnEmptyArrayListItReturnsAnEmptyList - 2018.06.08 at 22h 11m 03s.xml">
+      <configuration name="PlantConflictEngineTests.whenThePlantConflictFinderIsPassedAnEmptyArrayListItReturnsAnEmptyList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlantConflictEngineTests_whenThereIsNoConflictAnEmptyArrayIsReturned - 2018.06.08 at 22h 11m 45s.xml">
+      <configuration name="PlantConflictEngineTests.whenThereIsNoConflictAnEmptyArrayIsReturned" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlantConflictEngineTests - 2018.06.08 at 22h 11m 52s.xml">
+      <configuration name="PlantConflictEngineTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="135" y="57" width="1603" height="954" extended-state="0" />
+    <frame x="77" y="23" width="1603" height="954" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32905483" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32905483" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -356,12 +417,12 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983984" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2530429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3990665" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990665" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -376,14 +437,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WhichPlantWhere/Engine/tests/PlantConflictEngineTests.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
   </component>
@@ -395,17 +448,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/WhichPlantWhere/Engine/Conflict.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/WhichPlantWhere.Engine/PlantConflictEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="375">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WhichPlantWhere/Engine/tests/PlantConflictEngineTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="35" selection-start-line="35" selection-end-line="36" />
+        <state relative-caret-position="423">
+          <caret line="41" column="83" selection-start-line="41" selection-start-column="83" selection-end-line="41" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

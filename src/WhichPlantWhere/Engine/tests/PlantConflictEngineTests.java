@@ -43,4 +43,15 @@ public class PlantConflictEngineTests {
         Map found = plantConflictFinder.check(new ArrayList<>(Arrays.asList("carrot", "beetroot")));
         assertTrue(found.get("carrot").equals("beetroot"));
     }
+
+    @Test
+    public void whenThereAreMutipleElementsInTheArrayTheConflictEnginStillFindsTheConflict() {
+        ArrayList<Conflict> conflicts = new ArrayList();
+        conflicts.add(new Conflict("parsley", new ArrayList<>(Arrays.asList("celary"))));
+        conflicts.add(new Conflict("carrot", new ArrayList<>(Arrays.asList("beetroot"))));
+
+        PlantConflictEngine plantConflictFinder = new PlantConflictEngine(conflicts);
+        Map found = plantConflictFinder.check(new ArrayList<>(Arrays.asList("carrot", "beetroot")));
+        assertTrue(found.get("carrot").equals("beetroot"));
+    }
 }

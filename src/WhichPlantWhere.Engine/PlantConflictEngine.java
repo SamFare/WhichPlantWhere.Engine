@@ -5,7 +5,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class PlantConflictEngine {
 
@@ -19,16 +21,33 @@ public class PlantConflictEngine {
        if (plants.size() > 1) {
             HashMap toReturn = new HashMap<String, String>();
 
-            Conflict firstConflictList = this.conflicts.get(0) ;
+
+           for(Conflict conflict : this.conflicts) {
+               List<String> foundConflicts = this.getConflicts(conflict.values, plants);
+
+               if(foundConflicts.size() > 0) {
+                   for (String foundConflict : foundConflicts) {
+                       toReturn.put(conflict.key, foundConflict);
+                   }
+
+               }
+           }
 
 
-            for(String conflict : firstConflictList.values) {
-                if (plants.contains(conflict)) {
-                    toReturn.put(firstConflictList.key, conflict);
-                }
-            }
+
            return toReturn;
         }
         return new HashMap();
     }
+
+    private List getConflicts(ArrayList<String> potentialConflict, ArrayList<String> plants) {
+        return potentialConflict
+                .stream()
+                .filter(conflictingElement -> plants.contains(conflictingElement) == true)
+                .collect(Collectors.toList());
+    }
+
+
+
+
 }

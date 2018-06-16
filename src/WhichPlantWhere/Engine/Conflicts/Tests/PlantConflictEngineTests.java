@@ -1,7 +1,7 @@
-package WhichPlantWhere.Engine.tests;
+package WhichPlantWhere.Engine.Conflicts.Tests;
 
-import WhichPlantWhere.Engine.Conflict;
-import WhichPlantWhere.Engine.PlantConflictEngine;
+import WhichPlantWhere.Engine.Conflicts.Conflict;
+import WhichPlantWhere.Engine.Conflicts.PlantConflictEngine;
 import org.junit.Test;
 
 import java.util.ArrayList;

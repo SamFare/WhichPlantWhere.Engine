@@ -1,10 +1,10 @@
-package WhichPlantWhere.Engine;
+package WhichPlantWhere.Engine.Conflicts;
 
+import WhichPlantWhere.Engine.Conflicts.Conflict;
 import WhichPlantWhere.Engine.Exceptions.BuildException;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 

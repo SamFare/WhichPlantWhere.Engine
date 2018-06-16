@@ -1,6 +1,7 @@
-package WhichPlantWhere.Engine;
+package WhichPlantWhere.Engine.Conflicts;
 
-import java.lang.reflect.Array;
+import WhichPlantWhere.Engine.Conflicts.Conflict;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

@@ -1,4 +1,4 @@
-package WhichPlantWhere.Engine;
+package WhichPlantWhere.Engine.Conflicts;
 
 import java.util.ArrayList;
 

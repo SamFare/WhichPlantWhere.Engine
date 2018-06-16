@@ -1,7 +1,7 @@
-package WhichPlantWhere.Engine.tests;
+package WhichPlantWhere.Engine.Conflicts.Tests;
 
-import WhichPlantWhere.Engine.Conflict;
-import WhichPlantWhere.Engine.ConflictBuilder;
+import WhichPlantWhere.Engine.Conflicts.Conflict;
+import WhichPlantWhere.Engine.Conflicts.ConflictBuilder;
 import WhichPlantWhere.Engine.Exceptions.BuildException;
 import org.junit.Assert;
 import org.junit.Test;

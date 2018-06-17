@@ -1,10 +1,10 @@
-package WhichPlantWhere.Engine.PlantLoader;
+package WhichPlantWhere.Engine.Plants;
 
 public class Plant {
     private  String name;
     private String imgUrl;
 
-    Plant(String name, String imgUrl ) {
+    public Plant(String name, String imgUrl ) {
         this.name = name;
         this.imgUrl = imgUrl;
     }

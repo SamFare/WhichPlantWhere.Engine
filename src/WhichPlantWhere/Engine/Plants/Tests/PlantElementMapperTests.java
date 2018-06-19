@@ -22,16 +22,7 @@ public class PlantElementMapperTests {
                                             .newDocumentBuilder()
                                             .newDocument();
 
-        Element element = doc.createElement("veg");
-
-        Attr attrName = doc.createElement("name");
-        attrName.setValue(name);
-
-        Attr attrImgUrl = doc.createElement("imgUrl");
-        attrImgUrl.setValue("imgUrl");
-
-        element.setAttributeNode(attrName);
-        element.setAttributeNode(attrImgUrl);
+        Element element = this.createBasicVegElement(name, imgUrl);
 
         Plant constructedPlant = (Plant) new PlantElementMapper().mapElement(element);
 
@@ -39,5 +30,23 @@ public class PlantElementMapperTests {
 
         assertEquals(name, constructedPlant.getName());
         assertEquals(imgUrl, constructedPlant.getImgUrl());
+    }
+
+    private Element createBasicVegElement(String name, String imgUrl) throws Exception {
+        Document doc = DocumentBuilderFactory.newInstance()
+                .newDocumentBuilder()
+                .newDocument();
+
+        Element element = doc.createElement("plant");
+        element.appendChild(this.createElementWithValue(doc, "name", name));
+        element.appendChild(this.createElementWithValue(doc, "imgUrl", imgUrl));
+        return element;
+    }
+
+
+    private Element createElementWithValue(Document doc, String tagName, String value) {
+        Element element = doc.createElement(tagName);
+        element.appendChild(doc.createTextNode(value));
+        return element;
     }
 }

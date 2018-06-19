@@ -26,7 +26,7 @@ public class ElementFinder {
                 .parse(fileToLoadFrom);
     }
 
-    private static ArrayList getElementsWithTagName(Document document, String tagName) {
+    public static ArrayList getElementsWithTagName(Document document, String tagName) {
         ArrayList<Element> elements = new ArrayList<>();
         for(int i = 0; i < document.getElementsByTagName(tagName).getLength(); ++i ) {
             elements.add((Element) document.getElementsByTagName(tagName).item(i));
